@@ -160,6 +160,11 @@ module.exports = {
           short: 'vux'
         },
         {
+          name: 'Yes, 使用 element ui',
+          value: 'element',
+          short: 'element'               
+        },        
+        {
           name: 'No, 我自行搞定',
           value: false,
           short: 'no',
