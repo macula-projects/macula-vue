@@ -40,8 +40,8 @@
     "vue-wechat-title": "^2.0.4"{{#if_eq ui_demo "vux"}},
     "vux": "^2.2.0"{{/if_eq}}{{#if_eq ui_demo "vant"}},
     "vant": "^1.0.2",
-    "vant-css": "^1.0.0"
-    {{/if_eq}}
+    "vant-css": "^1.0.0"{{/if_eq}}{{#if_eq ui_demo "element"}},
+    "element-ui": "^2.3.3"{{/if_eq}}
   },
   "devDependencies": {
     {{#lint}}
@@ -98,7 +98,8 @@
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
-    "babel-loader": "^7.1.1",
+    "babel-loader": "^7.1.1",{{#if_eq ui_demo "element"}}
+    "babel-plugin-component": "^1.1.0",{{/if_eq}}
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-plugin-transform-vue-jsx": "^3.5.0",

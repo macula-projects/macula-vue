@@ -11,7 +11,8 @@
   "plugins": [
     "transform-vue-jsx", 
     "transform-runtime"{{#if_eq ui_demo "vant"}}, 
-    ["import", { "libraryName": "vant", "style": true }]{{/if_eq}}
+    ["import", { "libraryName": "vant", "style": true }]{{/if_eq}}{{#if_eq ui_demo "element"}}, 
+    ["component", { "libraryName": "element-ui", "styleLibraryName": "theme-chalk" }]{{/if_eq}}
   ]{{#if_or unit e2e}},
   "env": {
     "test": {
