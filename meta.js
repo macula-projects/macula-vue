@@ -206,6 +206,7 @@ module.exports = {
     'build/template/router.js': 'router && auto_router',
     'src/modules/demo_vux/**/*': "router && auto_router && layouts && (ui_demo === 'vux')",
     'src/modules/demo_vant/**/*': "router && auto_router && layouts && (ui_demo === 'vant')",
+    'src/modules/demo_element/**/*': "router && auto_router && layouts && (ui_demo === 'element')",
     'src/plugins/layout.js': 'router && layouts',
     'src/modules/**/layouts/**/*': 'router && layouts'
   },
